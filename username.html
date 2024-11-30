@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        input{
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-right:5px ;
+        }
+        body{
+            margin-top: 15%;
+        }
+    </style>
+    <script>
+        function check(){
+            var x=document.getElementById("a").value
+            var y=document.getElementById("b").value
+            if (x === "sush" && y=== "josh"){
+                alert("Login Successful")
+            }
+            else{
+                alert("Enter")  
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <br>
+    <center>
+        <h1>Login</h1>
+       
+    <input type="text" placeholder="Enter UserName" id="a">
+    <br>
+    <input type="password" placeholder="Enter Password" id="b">
+    <br>
+    <input type="button" value="Submit" onclick="check()">
+    </center>
+</body>
+</html>
